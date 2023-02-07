@@ -1,0 +1,63 @@
+body{
+  font-family: sans-serif;  
+}
+
+.caracteristicas{
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.caracteristicas button{
+  border: none;
+  background-color: #412f69;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: .75rem 1rem;
+}
+
+.caracteristicas button.green{
+  background-color: #005c54;
+  margin-top: 2rem;
+}
+
+.caracteristicas .container{
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: .5rem;
+}
+
+.caracteristicas .container input{
+  padding: .5rem .75rem;
+  border: 1px solid #ccc;
+}
+
+.caracteristicas .container input:focus{
+  border: 1px solid black;
+  outline: none;
+}
+
+.caracteristicas .container .caracteristica{
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.caracteristicas .container .caracteristica .action a{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .5rem .75rem;
+  display: inline-block;
+}
+
+.caracteristicas .container .caracteristica .action a.salvar{
+  border-radius: 2px;
+  background-color: #efefef;
+  color: #005c54;
+}
+
+.disabled{
+  pointer-events: none;
+  opacity: .5;
+  filter: grayscale(100%);
+}
